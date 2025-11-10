@@ -49,7 +49,7 @@ def ip_version(packet):
 #  Socket to talk to server
 print("Connecting to ribbit modem server…")
 socket = context.socket(zmq.REQ)
-socket.connect("tcp://localhost:5555")
+socket.connect("tcp://127.0.0.1:5555")
 
 try:
 	fp = open(sys.argv[1], 'rb')
